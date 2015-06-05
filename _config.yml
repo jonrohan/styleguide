@@ -4,7 +4,7 @@ baseurl: /styleguide
 google_analyics_id: UA-543420-18
 
 # Setup
-permalink: /:categories/:title
+permalink: none
 exclude:
   - CONTRIBUTING.md
   - LICENSE
@@ -13,9 +13,16 @@ exclude:
   - Gemfile.lock
 
 # Dependencies
-# kramdown:
-#   input: GFM
-# markdown: kramdown
+kramdown:
+  input: GFM
+markdown: kramdown
 
 gems:
   - jemoji
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"

@@ -1,1 +1,27 @@
-{{ content }}
+<!doctype html>
+<html lang="en-us" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+
+  <head>
+  </head>
+
+  <body>
+    <header>
+
+    </header>
+
+    <aside class="">
+      {% include toc.html %}
+    </aside>
+
+    <article class="container">
+      {{ content }}
+    </article>
+
+    <footer>
+      <div class="container">
+        <p>Personal styleguide inspirations <a href="http://codeguide.co/">codeguide.io</a>, <a href="https://github.com/airbnb/javascript">Airbnb js</a></p>
+        <p class="text-center">MIT &copy; {{ site.time | date: '%Y' }} Jon Rohan</p>
+      </div>
+    </footer>
+  </body>
+</html>
