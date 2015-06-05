@@ -20,8 +20,8 @@ I've created a nice little bundle of editor style goodies that will match my cod
 
 This styleguide is inspired by some styleguides from these awesome developers and organizations.
 
-* [Codeguide.co](http://codeguide.co/) by @mdo
-* [Javascript](https://github.com/airbnb/javascript) by @Airbnb
+* [codeguide.co](http://codeguide.co/) by [@mdo](https://github.com/mdo)
+* [Javascript](https://github.com/airbnb/javascript) by [@airbnb](https://github.com/airbnb)
 
 ## License
 
