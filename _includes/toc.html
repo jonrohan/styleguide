@@ -1,0 +1,13 @@
+<ol>
+{% for category in site.categories %}
+  {% assign cat = category | first %}
+  <li>
+    {{ cat }}
+    <ol>
+      {% for post in site.categories[cat] %}
+      <li>{{post.title}}</li>
+      {% endfor %}
+    </ol>
+  </li>
+{% endfor %}
+</ol>

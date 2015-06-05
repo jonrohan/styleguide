@@ -1,0 +1,21 @@
+# Meta
+title: Jon Rohan's Styleguide
+baseurl: /styleguide
+google_analyics_id: UA-543420-18
+
+# Setup
+permalink: /:categories/:title
+exclude:
+  - CONTRIBUTING.md
+  - LICENSE
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Dependencies
+# kramdown:
+#   input: GFM
+# markdown: kramdown
+
+gems:
+  - jemoji
