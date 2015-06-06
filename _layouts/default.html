@@ -111,6 +111,10 @@
         {% if next %}
           {% assign cat = next.categories | first %}
           <a href="{{site.baseurl}}{{next.url}}">{{ site.data.categories[cat] }} &#8212; {{ next.title }} &#187;</a>
+        {% elsif page.url == "/index.html" %}
+          {% assign next = site.posts | last %}
+          {% assign cat = next.categories | first %}
+          <a href="{{site.baseurl}}{{next.url}}">{{ site.data.categories[cat] }} &#8212; {{ next.title }} &#187;</a>
         {% else %}
           &nbsp;
         {% endif %}
