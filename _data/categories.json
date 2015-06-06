@@ -1,6 +1,7 @@
 {
   "css": "CSS",
   "html": "HTML",
-  "js": "JavaScript",
-  "ruby": "Ruby"
+  "js": "Javascript",
+  "ruby": "Ruby",
+  "editor": "Editor"
 }

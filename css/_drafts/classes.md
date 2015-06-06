@@ -1,6 +1,6 @@
 ---
   title: Classes
-  section: 1.3
+  section: 2.3
 ---
 
 ## CSS Classes

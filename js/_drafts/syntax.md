@@ -1,9 +1,9 @@
 ---
   title: Syntax
-  section: 2.1
+  section: 4.1
 ---
 
-## HTML Syntax
+## Javascript Syntax
 
 ### Spaces
 

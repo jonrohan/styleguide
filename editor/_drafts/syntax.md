@@ -1,10 +1,9 @@
 ---
   title: Syntax
-  draft: true
-  section: 2.1
+  section: 1.1
 ---
 
-## CSS Syntax
+## Syntax
 
 ### Spaces
 

@@ -1,9 +1,9 @@
 ---
   title: Syntax
-  section: 2.1
+  section: 5.1
 ---
 
-## HTML Syntax
+## Ruby Syntax
 
 ### Spaces
 

@@ -8,8 +8,8 @@
     <meta name="google-site-verification" content="_NoxB0dNrqCAY1WyDfHG9fU1vr_XymYhPMf5ja9fwQI" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-
-    {% capture title %}{% if page.title %}{{page.categories | first | upcase }} {{page.title}} &#8212; Styleguide &#8212; Jon Rohan{% endif %}{% endcapture %}
+    {% assign cat = page.categories | first %}
+    {% capture title %}{% if page.title %}{{ site.data.categories[cat] }} {{page.title}} &#8212; Styleguide &#8212; Jon Rohan{% endif %}{% endcapture %}
     {% capture description %}{% if page.excerpt %}{{page.excerpt | strip_html | strip_newlines }}{% elsif page.description %}{{ page.description | strip_html }}{% endif %}{% endcapture %}
 
     <title>{{ title }}</title>

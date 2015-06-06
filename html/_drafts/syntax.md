@@ -1,6 +1,6 @@
 ---
   title: Syntax
-  section: 2.1
+  section: 3.1
 ---
 
 ## HTML Syntax
