@@ -11,6 +11,7 @@ body {
   height: 100%;
   font-family: "Droid Serif", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif;
   font-size: 20px;
+  line-height: 1.5;
   background-color: #ddd;
 }
 
@@ -29,6 +30,10 @@ article {
   :first-child {
     margin-top: 0;
   }
+}
+
+footer {
+  font-size: 14px;
 }
 
 a {
@@ -68,7 +73,7 @@ a {
 .table-of-contents {
   margin: 20px -20px 0;
 
-  ol {
+  .table-of-contents-list {
     padding: 0;
     margin: 0;
     list-style-position: inside;
@@ -97,11 +102,11 @@ a {
     padding-left: 35px;
   }
 
-  .category-title {
-
+  .closed-category .sections {
+    display: none;
   }
 
-  .selected > .section {
+  .selected-section .section {
     background: #bbb;
 
     &:before {
@@ -110,4 +115,8 @@ a {
     }
   }
 
+}
+
+.styleguide-intro {
+  font-size: 16px;
 }

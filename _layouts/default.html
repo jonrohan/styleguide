@@ -83,8 +83,10 @@
     </header>
 
     <aside>
-      <a href="{{site.baseurl}}/">Styleguide</a>
-      <a href="https://github.com/jonrohan/styleguide">GitHub</a>
+      <p class="styleguide-intro">
+        My <a href="{{site.baseurl}}/">personal styleguide</a> for writing code.
+        Available on <a href="https://github.com/jonrohan/styleguide">GitHub</a>.
+      </p>
       {% include toc.html %}
     </aside>
 
@@ -109,6 +111,10 @@
         };
         anchors.add('.markdown-body h1, .markdown-body h2, .markdown-body h3,' +
           ' .markdown-body h4, .markdown-body h5, .markdown-body h6')
+        $(document).on("click", ".js-category-item", function(){
+          $(this).closest(".js-category-list").toggleClass("closed-category");
+          return false;
+        });
       })
     </script>
   </body>

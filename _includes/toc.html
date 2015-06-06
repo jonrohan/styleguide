@@ -1,15 +1,16 @@
 <nav class="table-of-contents">
-  <ol>
+  <ol class="table-of-contents-list categories">
   {% assign cats = site.posts | sort: 'section' | group_by: 'categories' %}
+  {% assign page_cat = page.categories | first %}
   {% for category in cats %}
     {% assign cat = category.name | remove: '["' | remove: '"]' %}
-    {% capture selected_category %}{% if page.categories | first == cat %}selected{% endif %}{% endcapture %}
-    <li class="{{selected_category}}">
-      <div class="category-title">{{ site.data.categories[cat] }}</div>
-      <ol>
+    {% capture selected_category %}{% if page_cat == cat %}selected-category{% else %}closed-category{% endif %}{% endcapture %}
+    <li class="table-of-contents-list-item {{selected_category}} js-category-list">
+      <a href="{{site.baseurl}}{{ category.items[0].url }}" class="category-title js-category-item">{{ site.data.categories[cat] }}</a>
+      <ol class="table-of-contents-list sections">
         {% for post in category.items %}
-        {% capture selected %}{% if page.url == post.url %}selected{% endif %}{% endcapture %}
-        <li class="{{selected}}"><a href="{{site.baseurl}}{{post.url}}" class="section">{{post.title}}</a></li>
+        {% capture selected %}{% if page.url == post.url %}selected-section{% endif %}{% endcapture %}
+        <li class="table-of-contents-list-item {{selected}}"><a href="{{site.baseurl}}{{post.url}}" class="section">{{post.title}}</a></li>
         {% endfor %}
       </ol>
     </li>
