@@ -1,7 +1,7 @@
 ---
   title: Syntax
-  draft: true
   section: 2.1
+  date: 2015-02-01 00:00:00
 ---
 
 ## CSS Syntax

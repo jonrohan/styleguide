@@ -1,6 +1,7 @@
 ---
   title: Syntax
   section: 5.1
+  date: 2015-05-01 00:00:00
 ---
 
 ## Ruby Syntax

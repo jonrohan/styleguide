@@ -1,6 +1,7 @@
 ---
   title: Syntax
   section: 4.1
+  date: 2015-04-01 00:00:00
 ---
 
 ## Javascript Syntax

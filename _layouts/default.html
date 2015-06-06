@@ -96,6 +96,27 @@
         {{ content }}
       </article>
 
+      <div class="columns pagination">
+        {% assign previous = page.previous %}
+        <div class="column one-half text-left">
+        {% if previous %}
+          {% assign cat = previous.categories | first %}
+          <a href="{{site.baseurl}}{{previous.url}}">&#171; {{ site.data.categories[cat] }} &#8212; {{ previous.title }}</a>
+        {% else %}
+          &nbsp;
+        {% endif %}
+        </div>
+        {% assign next = page.next %}
+        <div class="column one-half text-right">
+        {% if next %}
+          {% assign cat = next.categories | first %}
+          <a href="{{site.baseurl}}{{next.url}}">{{ site.data.categories[cat] }} &#8212; {{ next.title }} &#187;</a>
+        {% else %}
+          &nbsp;
+        {% endif %}
+        </div>
+      </div>
+
       <footer>
         <div class="container">
           <p class="text-center">MIT &copy; {{ site.time | date: '%Y' }} Jon Rohan</p>
@@ -109,7 +130,7 @@
           placement: 'left',
           icon: '#'
         };
-        anchors.add('.markdown-body h1, .markdown-body h2, .markdown-body h3,' +
+        anchors.add('.markdown-body h3,' +
           ' .markdown-body h4, .markdown-body h5, .markdown-body h6')
         $(document).on("click", ".js-category-item", function(){
           $(this).closest(".js-category-list").toggleClass("closed-category");
