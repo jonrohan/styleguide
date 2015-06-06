@@ -2,6 +2,79 @@
 <html lang="en-us" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 
   <head>
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="google-site-verification" content="RlkXEN-itWvUefIzgXZdJ2alzxiK5qruVYNaIVw5sEs" >
+    <meta name="google-site-verification" content="_NoxB0dNrqCAY1WyDfHG9fU1vr_XymYhPMf5ja9fwQI" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    {% capture title %}{% if page.title %}{{page.categories | first | upcase }} {{page.title}} &#8212; Styleguide &#8212; Jon Rohan{% endif %}{% endcapture %}
+    {% capture description %}{% if page.excerpt %}{{page.excerpt | strip_html | strip_newlines }}{% elsif page.description %}{{ page.description | strip_html }}{% endif %}{% endcapture %}
+
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+
+    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" >
+
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/avatar.png">
+    {% case page.og_type %}
+    {% when 'article' %}
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="{{page.date}}">
+    <meta property="article:author" content="Jon Rohan">
+    <meta property="article:section" content="{{page.category}}">
+    <meta property="article:tag" content="{{page.tags | join:", "}}">
+    {% else %}
+    <meta property="og:type" content="website">
+    {% endcase %}
+
+    <meta name="twitter:card" content="summary" >
+    <meta name="twitter:site" content="@jonrohan" >
+    <meta name="twitter:title" content="{{ title }}" >
+    <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/images/avatar.png" >
+    <meta name="twitter:description" content="{{ description }}" >
+    <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" >
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.url }}/assets/images/icons/apple-touch-icon-57x57.png" >
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/assets/images/icons/apple-touch-icon-114x114.png" >
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/assets/images/icons/apple-touch-icon-72x72.png" >
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/assets/images/icons/apple-touch-icon-144x144.png" >
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ site.url }}/assets/images/icons/apple-touch-icon-60x60.png" >
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.url }}/assets/images/icons/apple-touch-icon-120x120.png" >
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.url }}/assets/images/icons/apple-touch-icon-76x76.png" >
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.url }}/assets/images/icons/apple-touch-icon-152x152.png" >
+    <link rel="icon" type="image/png" href="{{ site.url }}/assets/images/icons/favicon-196x196.png" sizes="196x196" >
+    <link rel="icon" type="image/png" href="{{ site.url }}/assets/images/icons/favicon-96x96.png" sizes="96x96" >
+    <link rel="icon" type="image/png" href="{{ site.url }}/assets/images/icons/favicon-32x32.png" sizes="32x32" >
+    <link rel="icon" type="image/png" href="{{ site.url }}/assets/images/icons/favicon-16x16.png" sizes="16x16" >
+    <link rel="icon" type="image/png" href="{{ site.url }}/assets/images/icons/favicon-128.png" sizes="128x128" >
+    <meta name="application-name" content="&nbsp;">
+    <meta name="msapplication-TileColor" content="#FFFFFF" >
+    <meta name="msapplication-TileImage" content="{{ site.url }}/assets/images/icons/mstile-144x144.png" >
+    <meta name="msapplication-square70x70logo" content="{{ site.url }}/assets/images/icons/mstile-70x70.png" >
+    <meta name="msapplication-square150x150logo" content="{{ site.url }}/assets/images/icons/mstile-150x150.png" >
+    <meta name="msapplication-wide310x150logo" content="{{ site.url }}/assets/images/icons/mstile-310x150.png" >
+    <meta name="msapplication-square310x310logo" content="{{ site.url }}/assets/images/icons/mstile-310x310.png" >
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/lib.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/styleguide.css">
+
+    <script>
+      if(document.cookie.match(/skipanaly=1/)==null) {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', '{{ site.google_analyics_id }}', 'auto');
+        ga('send', 'pageview');
+      }
+    </script>
   </head>
 
   <body>
@@ -9,19 +82,34 @@
 
     </header>
 
-    <aside class="">
+    <aside>
+      <a href="{{site.baseurl}}/">Styleguide</a>
+      <a href="https://github.com/jonrohan/styleguide">GitHub</a>
       {% include toc.html %}
     </aside>
 
-    <article class="container">
-      {{ content }}
-    </article>
+    <div class="main-content">
+      <span class="page-section">{{ page.section }}</span>
+      <article class="markdown-body">
+        {{ content }}
+      </article>
 
-    <footer>
-      <div class="container">
-        <p>Personal styleguide inspirations <a href="http://codeguide.co/">codeguide.io</a>, <a href="https://github.com/airbnb/javascript">Airbnb js</a></p>
-        <p class="text-center">MIT &copy; {{ site.time | date: '%Y' }} Jon Rohan</p>
-      </div>
-    </footer>
+      <footer>
+        <div class="container">
+          <p class="text-center">MIT &copy; {{ site.time | date: '%Y' }} Jon Rohan</p>
+        </div>
+      </footer>
+    </div>
+    <script src="{{ site.url }}/assets/js/lib.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        anchors.options = {
+          placement: 'left',
+          icon: '#'
+        };
+        anchors.add('.markdown-body h1, .markdown-body h2, .markdown-body h3,' +
+          ' .markdown-body h4, .markdown-body h5, .markdown-body h6')
+      })
+    </script>
   </body>
 </html>

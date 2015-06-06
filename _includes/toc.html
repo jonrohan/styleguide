@@ -1,13 +1,18 @@
-<ol>
-{% for category in site.categories %}
-  {% assign cat = category | first %}
-  <li>
-    {{ cat }}
-    <ol>
-      {% for post in site.categories[cat] %}
-      <li>{{post.title}}</li>
-      {% endfor %}
-    </ol>
-  </li>
-{% endfor %}
-</ol>
+<nav class="table-of-contents">
+  <ol>
+  {% for category in site.categories %}
+    {% assign cat = category | first %}
+    {% capture selected_category %}{% if page.categories | first == cat %}selected{% endif %}{% endcapture %}
+    <li class="{{selected_category}}">
+      <div class="category-title">{{ site.data.categories[cat] }}</div>
+      <ol>
+        {% assign posts = site.categories[cat] | sort: "section" %}
+        {% for post in posts | reversed %}
+        {% capture selected %}{% if page.url == post.url %}selected{% endif %}{% endcapture %}
+        <li class="{{selected}}"><a href="{{site.baseurl}}{{post.url}}" class="section">{{post.title}}</a></li>
+        {% endfor %}
+      </ol>
+    </li>
+  {% endfor %}
+  </ol>
+</nav>

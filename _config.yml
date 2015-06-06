@@ -1,10 +1,13 @@
 # Meta
 title: Jon Rohan's Styleguide
 baseurl: /styleguide
+url: http://jonrohan.codes
 google_analyics_id: UA-543420-18
 
 # Setup
-permalink: none
+permalink: /:categories-:title.html
+show_drafts: true
+unpublished: true
 exclude:
   - CONTRIBUTING.md
   - LICENSE
@@ -16,6 +19,7 @@ exclude:
 kramdown:
   input: GFM
 markdown: kramdown
+highlighter: pygments
 
 gems:
   - jemoji
@@ -26,3 +30,9 @@ defaults:
       path: ""
     values:
       layout: "default"
+      published: true
+      date: 2015-01-01 00:00:00
+
+sass:
+  sass_dir: ""
+  style: compressed
