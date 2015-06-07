@@ -1,16 +1,20 @@
 ---
 ---
 
-$mobile-size: 700px;
-
 html {
   height: 100%;
   padding: 0;
   margin: 0;
 }
 
+$mobile-size: 700px;
+
 a {
   color: #dc1d60;
+
+  &:hover {
+    color: #dc1d60;
+  }
 }
 
 p code {
@@ -35,24 +39,23 @@ header {
   h1 {
     display: inline-block;
     margin: 0;
+    font-family: "Lato", Helvetica, sans-serif;
     font-size: 20px;
     line-height: 30px;
-    transition: all 0.5s ease;
     vertical-align: middle;
-    font-family: "Lato", Helvetica, sans-serif;
+    transition: all 0.5s ease;
   }
 }
 
 .nav-item {
-  display: inline-block;
-  vertical-align: middle;
   position: relative;
+  display: inline-block;
   width: 30px;
   height: 30px;
-  border: 3px solid rgba(0, 0, 0, 0);
-  transition: all 0.5s ease;
   margin-right: 5px;
   vertical-align: middle;
+  border: 3px solid rgba(0, 0, 0, 0);
+  transition: all 0.5s ease;
 
   .inner,
   .inner::before,
@@ -142,7 +145,7 @@ a {
 }
 
 .table-of-contents {
-  margin: 0 -20px;
+  margin: 15px -20px 40px;
 
   .table-of-contents-list {
     padding: 0;
@@ -190,7 +193,7 @@ a {
 }
 
 .styleguide-intro {
-  margin-top: 0;
+  margin: 0;
 }
 
 .pagination {
@@ -325,8 +328,16 @@ a {
     @include nav-h();
 
     .main-content {
-      margin-left: 0;
       padding-top: 70px;
+      margin-left: 0;
     }
   }
+}
+
+.download-button {
+  display: block;
+  text-align: center;
+  border: 3px solid #fff;
+  padding: 10px 0;
+  color: #fff;
 }
