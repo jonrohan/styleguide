@@ -255,16 +255,13 @@ a {
 
 .is-nav-close {
 
-  header {
-    color: #111;
-  }
-
   aside {
     transform: translateX(-100%);
   }
 
   .main-content {
     margin-left: 0;
+    padding-top: 70px;
   }
 
   @include nav-h();
@@ -273,7 +270,10 @@ a {
 .is-nav-open {
   header {
     position: fixed;
-    color: #fff;
+  }
+
+  .main-content {
+    padding-top: 23px;
   }
 
   @include nav-x();
@@ -290,7 +290,6 @@ a {
 
     header {
       position: fixed;
-      color: #fff;
     }
 
     aside {
@@ -300,6 +299,7 @@ a {
 
     .main-content {
       margin-left: 0;
+      padding-top: 70px;
     }
   }
 
@@ -307,7 +307,6 @@ a {
 
     header {
       position: absolute;
-      color: #111;
     }
 
     aside {
@@ -318,6 +317,7 @@ a {
 
     .main-content {
       margin-left: 0;
+      padding-top: 70px;
     }
   }
 }

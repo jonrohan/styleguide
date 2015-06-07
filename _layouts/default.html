@@ -107,6 +107,8 @@
           {% if previous %}
             {% assign cat = previous.categories | first %}
             <a href="{{site.baseurl}}{{previous.url}}">&#171; {{ site.data.categories[cat] }} &#8212; {{ previous.title }}</a>
+          {% elsif page.url != "/index.html" %}
+            <a href="{{site.baseurl}}/">&#171; About</a>
           {% else %}
             &nbsp;
           {% endif %}
