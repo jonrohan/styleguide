@@ -93,6 +93,7 @@
         You can fork it on <a href="https://github.com/jonrohan/styleguide">GitHub</a> or ask me questions on <a href="https://twitter.com/jonrohan">Twitter</a>.
       </p>
       {% include toc.html %}
+      <a href="{{ site.baseurl }}/config.html" class="download-button">Download .config</a>
     </aside>
 
     <div class="main-content">
@@ -108,7 +109,7 @@
           {% if previous %}
             {% assign cat = previous.categories | first %}
             <a href="{{site.baseurl}}{{previous.url}}">&#171; {{ site.data.categories[cat] }} &#8212; {{ previous.title }}</a>
-          {% elsif page.url != "/index.html" %}
+          {% elsif page.url != "/index.html" and page.url != "/config.html" %}
             <a href="{{site.baseurl}}/">&#171; About</a>
           {% else %}
             &nbsp;
