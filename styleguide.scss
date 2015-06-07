@@ -23,14 +23,27 @@ header {
   top: 20px;
   left: 20px;
   z-index: 2;
+
+  h1 {
+    display: inline-block;
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+    transition: all 0.5s ease;
+    vertical-align: middle;
+  }
 }
 
 .nav-item {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
   width: 30px;
   height: 30px;
   border: 3px solid rgba(0, 0, 0, 0);
   transition: all 0.5s ease;
+  margin-right: 5px;
+  vertical-align: middle;
 
   .inner,
   .inner::before,
@@ -232,6 +245,11 @@ a {
 }
 
 .is-nav-close {
+
+  header {
+    color: #111;
+  }
+
   aside {
     transform: translateX(-100%);
   }
@@ -246,6 +264,7 @@ a {
 .is-nav-open {
   header {
     position: fixed;
+    color: #fff;
   }
 
   @include nav-x();
@@ -262,6 +281,7 @@ a {
 
     header {
       position: fixed;
+      color: #fff;
     }
 
     aside {
@@ -278,6 +298,7 @@ a {
 
     header {
       position: absolute;
+      color: #111;
     }
 
     aside {
