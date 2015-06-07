@@ -8,9 +8,12 @@
 
 These are general coding styles that I use in most all of my code. It would be pretty rare that I would override these settings, except in specific instances.
 
-### Spaces
+### Indentation
 
-Use soft tabs with `2` spaces.
+* Use soft tabs with `2` spaces.
+* Never mix spaces with tabs.
+
+I use spaces over tabs because tabs aren't always displayed the same size on all devices. Spaces are always spaces. <u>&nbsp;&nbsp;</u>
 
 ### Encoding
 

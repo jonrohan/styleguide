@@ -67,7 +67,8 @@ header {
   .inner {
     position: absolute;
     top: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 
     &::before {
       position: absolute;
@@ -223,12 +224,15 @@ a {
       &::after {
         width: 17px;
         background-color: #fff;
-        transform: rotate(45deg);
-        transform-origin: 0 50%;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        -webkit-transform-origin: 0 50%;
+                transform-origin: 0 50%;
       }
 
       &::after {
-        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
       }
     }
   }
@@ -246,8 +250,10 @@ a {
       &::after {
         width: 14px;
         background-color: #111;
-        transform: rotate(0);
-        transform-origin: 0 50%;
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+        -webkit-transform-origin: 0 50%;
+                transform-origin: 0 50%;
       }
     }
   }
@@ -256,7 +262,8 @@ a {
 .is-nav-close {
 
   aside {
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 
   .main-content {
@@ -294,7 +301,8 @@ a {
 
     aside {
       width: 100%;
-      transform: translateX(0);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
     }
 
     .main-content {
@@ -310,7 +318,8 @@ a {
     }
 
     aside {
-      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
     }
 
     @include nav-h();

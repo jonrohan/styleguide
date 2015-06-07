@@ -28,4 +28,4 @@ This styleguide is inspired by some styleguides from these awesome developers an
 
 ## License
 
-MIT &copy; [Jon Rohan]({{ site.url }})
+MIT &copy; [Jon Rohan](http://jonrohan.codes/)
