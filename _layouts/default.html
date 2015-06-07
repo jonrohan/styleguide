@@ -136,11 +136,13 @@
     </div>
     <script type="text/javascript">
       $(document).ready(function(){
-        anchors.options = {
-          placement: 'right',
-          icon: '#'
-        };
-        anchors.add('.markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6');
+        if (anchors) {
+          anchors.options = {
+            placement: 'right',
+            icon: '#'
+          };
+          anchors.add('.markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6');
+        }
         $(document).on("click", ".js-nav-item", function(e) {
           e.preventDefault();
           $("body").toggleClass("is-nav-close is-nav-open");
