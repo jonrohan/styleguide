@@ -77,9 +77,12 @@
     </script>
   </head>
 
-  <body>
-    <header>
+  <body class="is-nav-open">
 
+    <header>
+      <a href="#" class="js-nav-item nav-item">
+        <div class="inner"></div>
+      </a>
     </header>
 
     <aside>
@@ -131,11 +134,14 @@
     <script type="text/javascript">
       $(document).ready(function(){
         anchors.options = {
-          placement: 'left',
+          placement: 'right',
           icon: '#'
         };
-        anchors.add('.markdown-body h3,' +
-          ' .markdown-body h4, .markdown-body h5, .markdown-body h6')
+        anchors.add('.markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6');
+        $(document).on("click", ".js-nav-item", function(e) {
+          e.preventDefault();
+          $("body").toggleClass("is-nav-close is-nav-open");
+        });
       })
     </script>
   </body>
