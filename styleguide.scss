@@ -9,6 +9,14 @@ html {
   margin: 0;
 }
 
+a {
+  color: #dc1d60;
+}
+
+p code {
+  color: #61be03;
+}
+
 body {
   height: 100%;
   font-family: "Droid Serif", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif;
@@ -31,6 +39,7 @@ header {
     line-height: 30px;
     transition: all 0.5s ease;
     vertical-align: middle;
+    font-family: "Lato", Helvetica, sans-serif;
   }
 }
 
@@ -157,7 +166,7 @@ a {
       display: block;
       width: 3px;
       content: "";
-      background: #000;
+      background: #dc1d60;
     }
   }
 
