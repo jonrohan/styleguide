@@ -44,7 +44,6 @@ header {
     font-size: 20px;
     line-height: 30px;
     vertical-align: middle;
-    transition: all 0.5s ease;
   }
 }
 
@@ -95,7 +94,7 @@ aside {
   overflow-y: auto;
   color: #fff;
   background-color: rgba(27, 30, 34, 0.98);
-  transition: all 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 article {
@@ -137,7 +136,7 @@ a {
   padding: 70px 20px 50px;
   margin-left: 280px;
   background-color: #fff;
-  transition: all 0.5s ease;
+  transition: margin 0.5s ease, padding 0.5s ease;
 
   .page-section {
     display: block;
@@ -294,6 +293,7 @@ a {
 
   aside {
     z-index: 1;
+    width: 100%;
   }
 
   .is-nav-close {
@@ -303,11 +303,10 @@ a {
       position: fixed;
       right: 0;
       background-color: rgba(27, 30, 34, 0.7);
-      transition: all 0.5s ease 0.8s;
+      transition: background-color 0.5s ease 0.8s, right 0.5s ease 0.8s;
     }
 
     aside {
-      width: 100%;
       -webkit-transform: translateX(0);
               transform: translateX(0);
     }
