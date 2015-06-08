@@ -16,7 +16,7 @@ open http://localhost:4000/
 
 ## Usage
 
-I've created a nice little bundle of editor style goodies that will match my coding style. You can [download here](/).
+I've created a nice little bundle of editor style goodies that will match my coding style. You can [download here](https://github.com/jonrohan/styleguide/releases/download/v0.0.1/config.zip).
 
 ## Related
 
