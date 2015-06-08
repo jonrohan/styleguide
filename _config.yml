@@ -16,6 +16,10 @@ exclude:
   - Gemfile.lock
   - "*/readme.md"
 
+include:
+  - .editorconfig
+  - .scss-lint.yml
+
 # Dependencies
 kramdown:
   input: GFM
