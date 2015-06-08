@@ -8,7 +8,7 @@
 
 ### Avoid color keywords
 
-Don't use color keywords like `black, green, blue`. Instead use hexadecimal color codes like `#000, #080, #00f`.
+Don't use color keywords eg. `black, green, blue`. Instead use hexadecimal color codes eg. `#000, #080, #00f`.
 
 ### Border zero
 
@@ -72,7 +72,18 @@ color: rgba(0,0,0,.1);
 color: rgb(255, 255, 255);
 {% endhighlight %}
 
-
 ### Zero Units
 
-Don't use units (px, em, rem...) on `0` values. They're unnecessary. `margin: 0px;` vs `margin: 0;`
+Don't use units (px, em, rem...) on `0` values. They're unnecessary.
+
+##### Bad
+
+```
+margin: 0px;
+```
+
+##### Good
+
+{% highlight css %}
+margin: 0;
+{% endhighlight %}
