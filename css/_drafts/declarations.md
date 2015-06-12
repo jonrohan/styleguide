@@ -6,7 +6,7 @@
 
 ## CSS Declarations
 
-A **declaration block** in CSS refers to an entire block of CSS. For example:
+A **declaration block** in CSS refers to an entire block of CSS between the `{ }` brackets. For example:
 
 {% highlight css %}
 .header {
