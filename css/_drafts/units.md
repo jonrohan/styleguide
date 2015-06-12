@@ -6,17 +6,43 @@
 
 ## CSS Units
 
+This section focuses on the dos and don'ts of units. Mostly it shows better ways to shorten units in CSS. When dealing with a large codebase the best practice is the less CSS you write the better.
+
 ### Avoid color keywords
 
-Don't use color keywords eg. `black, green, blue`. Instead use hexadecimal color codes eg. `#000, #080, #00f`.
+Don't use color keywords, instead use hexadecimal color codes.
+
+##### Bad
+
+```
+color: black;
+```
+
+##### Good
+
+{% highlight css %}
+color: #000;
+{% endhighlight %}
 
 ### Border zero
 
-Use `border: 0;` instead of `border: none;`.
+Don't use `border: none;`. Instead use `border: zero;`. They are both valid options, but `border: 0;` is shorter.
 
 ### Leading zero
 
-Exclude unnecessary leading zeros `0.5s` vs `.5s`
+Exclude unnecessary leading zeros.
+
+##### Bad
+
+```
+color: rgba(24, 12, 76, 0.4);
+```
+
+##### Good
+
+{% highlight css %}
+color: rgba(24, 12, 76, .4);
+{% endhighlight %}
 
 ### Shorthand color values
 
