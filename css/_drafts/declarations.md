@@ -6,6 +6,22 @@
 
 ## CSS Declarations
 
+A **declaration block** in CSS refers to an entire block of CSS. For example:
+
+{% highlight css %}
+.header {
+  font-weight: bold;
+}
+{% endhighlight %}
+
+A **declaration** refers to one `property: value;` line.
+
+{% highlight css %}
+font-weight: bold;
+{% endhighlight %}
+
+Here's some rules that focus on declaration blocks and lines.
+
 * End every declaration with a semicolon.
 
 ### Place empty line between blocks
