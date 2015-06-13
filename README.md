@@ -4,6 +4,8 @@ Sometimes another developer will ask me. *"Hyphens or underscores?"* *"Spaces or
 
 This styleguide is how I write code. Styleguides are meant to help teams of developers to create a strategy on how they write their code. If you find this useful, I encourage you to [fork it](https://github.com/jonrohan/styleguide) and use it for your own team's guide.
 
+I setup [a nice site](http://jonrohan.codes/styleguide/) for the style guide, but you can also read through it on GitHub. ToC below.
+
 ## Table of contents
 
 * [Editor](./editor/_drafts/README.md)
