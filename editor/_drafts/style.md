@@ -1,11 +1,9 @@
 ---
-  title: Coding style
+  title: Code style
   section: 1.1
   url: http://jonrohan.codes/styleguide/editor-style.html
   date: 2015-01-01 00:00:00
 ---
-
-## Coding style
 
 These are general coding styles that I use in most all of my code. It would be pretty rare that I would override these settings, except in specific instances.
 

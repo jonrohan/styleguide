@@ -5,8 +5,6 @@
   date: 2015-02-03 00:00:00
 ---
 
-## CSS Declarations
-
 A **declaration block** in CSS refers to an entire block of CSS between the `{ }` brackets. For example:
 
 ```css

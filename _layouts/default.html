@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     {% assign cat = page.categories | first %}
-    {% capture title %}{% if page.title %}{{ site.data.categories[cat] }} {{page.title}} &#8212; Styleguide &#8212; Jon Rohan{% endif %}{% endcapture %}
+    {% capture cat_title %}{{ site.data.categories[cat] }} {{page.title}}{% endcapture %}
+    {% capture title %}{% if page.title %}{% if page.url != "/index.html" %}{{cat_title}} &#8212; {% endif %}Styleguide &#8212; Jon Rohan{% endif %}{% endcapture %}
     {% capture description %}{% if page.excerpt %}{{page.excerpt | strip_html | strip_newlines }}{% elsif page.description %}{{ page.description | strip_html }}{% endif %}{% endcapture %}
 
     <title>{{ title }}</title>
@@ -98,6 +99,7 @@
     <div class="main-content">
       <a href="https://github.com/jonrohan/styleguide/blob/gh-pages/{{ page.path }}" class="page-section">{{ page.section }}</a>
       <article class="markdown-body">
+        <h2>{{ cat_title }}</h2>
         {{ content }}
       </article>
 

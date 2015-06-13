@@ -5,8 +5,6 @@
   date: 2015-02-04 00:00:00
 ---
 
-## CSS Selectors
-
 A **CSS selector** is the pattern you use to identify the element you're matching and applying the [declaration block](/styleguide/css-declarations.html). CSS selectors are separated by `,`.
 
 ### Attribute value quotes

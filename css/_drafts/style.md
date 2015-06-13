@@ -5,8 +5,6 @@
   date: 2015-02-01 00:00:00
 ---
 
-## CSS Style
-
 Here's some style tips for CSS. Remember these are up to your team, but you should enforce them once they're decided. Think about installing [linters](/styleguide/editor-linting.html) in your workflow.
 
 ### Final newline

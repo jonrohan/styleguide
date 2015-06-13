@@ -1,8 +1,7 @@
 ---
-  title: "Styleguide"
+  title: "Personal styleguide"
+  description: This styleguide is how I write code. Styleguides are meant to help teams of developers to create a strategy on how they write their code.
 ---
-
-## Personal styleguide
 
 Sometimes another developer will ask me. *"Hyphens or underscores?"* *"Spaces or tabs?"* That's when I realized that creating a personal styleguide would be the best thing ever.
 

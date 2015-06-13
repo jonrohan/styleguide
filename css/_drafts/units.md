@@ -5,8 +5,6 @@
   date: 2015-02-02 00:00:00
 ---
 
-## CSS Units
-
 This section focuses on the dos and don'ts of units. Mostly it shows better ways to shorten units in CSS. When dealing with a large codebase the best practice is the less CSS you write the better.
 
 ### Avoid color keywords
