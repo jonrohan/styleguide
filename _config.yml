@@ -24,6 +24,7 @@ markdown: redcarpet
 
 gems:
   - jemoji
+  - jekyll-sitemap
 
 defaults:
   -
