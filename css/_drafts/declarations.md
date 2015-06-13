@@ -1,6 +1,7 @@
 ---
   title: Declarations
   section: 2.3
+  url: [css-declarations.html](http://jonrohan.codes/styleguide/css-declarations.html)
   date: 2015-02-03 00:00:00
 ---
 

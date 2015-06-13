@@ -9,7 +9,7 @@ I setup [a nice site](http://jonrohan.codes/styleguide/) for the style guide, bu
 ## Table of contents
 
 * [Editor](./editor/_drafts/README.md)
-  * [Coding style](./editor/_drafts/coding-style.md)
+  * [Coding style](./editor/_drafts/style.md)
 * [CSS](./css/_drafts/README.md)
   * [Coding style](./css/_drafts/style.md)
   * [CSS units](./css/_drafts/units.md)

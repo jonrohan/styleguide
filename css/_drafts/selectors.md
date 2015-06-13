@@ -1,6 +1,7 @@
 ---
   title: Selectors
   section: 2.4
+  url: [css-selectors.html](http://jonrohan.codes/styleguide/css-selectors.html)
   date: 2015-02-04 00:00:00
 ---
 
