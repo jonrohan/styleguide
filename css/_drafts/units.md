@@ -45,6 +45,22 @@ color: rgba(24, 12, 76, 0.4);
 color: rgba(24, 12, 76, .4);
 ```
 
+### Lowercase hex color values
+
+Use lowercase letters in hex color values.
+
+##### Bad
+
+```
+color: #AA3939;
+```
+
+##### Good
+
+```
+color: #aa3939;
+```
+
 ### Shorthand color values
 
 When possible use shorthand notation for color values.
