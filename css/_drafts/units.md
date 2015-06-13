@@ -1,7 +1,7 @@
 ---
   title: Units
   section: 2.2
-  url: [css-units.html](http://jonrohan.codes/styleguide/css-units.html)
+  url: http://jonrohan.codes/styleguide/css-units.html
   date: 2015-02-02 00:00:00
 ---
 

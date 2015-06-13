@@ -1,7 +1,7 @@
 ---
   title: Coding style
   section: 1.1
-  url: [editor-style.html](http://jonrohan.codes/styleguide/editor-style.html)
+  url: http://jonrohan.codes/styleguide/editor-style.html
   date: 2015-01-01 00:00:00
 ---
 
