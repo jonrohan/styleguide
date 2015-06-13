@@ -18,7 +18,7 @@ Keep individual selectors on their own lines.
 
 ##### Bad
 
-```css
+```
 .aside, .col-1, .button {
   overflow: auto;
 }
@@ -26,10 +26,10 @@ Keep individual selectors on their own lines.
 
 ##### Good
 
-{% highlight css %}
+```css
 .aside,
 .col-1,
 .button {
   overflow: auto;
 }
-{% endhighlight %}
+```

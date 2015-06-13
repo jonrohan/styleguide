@@ -18,7 +18,7 @@ Use soft tabs with `2` spaces. Never mix spaces with tabs. I use spaces over tab
 
 ##### Bad
 
-```css
+```
 .list {
     display: block;
 border: 0;
@@ -27,12 +27,12 @@ border: 0;
 
 ##### Good
 
-{% highlight css %}
+```css
 .list {
   display: block;
   border: 0;
 }
-{% endhighlight %}
+```
 
 ### Quotes
 
@@ -44,7 +44,7 @@ In declarations, opening brackets should be preceded by a single space.
 
 ##### Bad
 
-```css
+```
 /* Bad: no space */
 .container{
   width: 300px;
@@ -58,8 +58,8 @@ In declarations, opening brackets should be preceded by a single space.
 
 ##### Good
 
-{% highlight css %}
+```css
 .container {
   width: 300px;
 }
-{% endhighlight %}
+```

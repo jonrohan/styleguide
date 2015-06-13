@@ -21,10 +21,10 @@ include:
   - .scss-lint.yml
 
 # Dependencies
-kramdown:
-  input: GFM
-markdown: kramdown
-highlighter: pygments
+markdown: redcarpet
+# kramdown:
+#   input: GFM
+# highlighter: pygments
 
 gems:
   - jemoji

@@ -8,17 +8,17 @@
 
 A **declaration block** in CSS refers to an entire block of CSS between the `{ }` brackets. For example:
 
-{% highlight css %}
+```css
 .header {
   font-weight: bold;
 }
-{% endhighlight %}
+```
 
 A **declaration** refers to one `property: value;` line.
 
-{% highlight css %}
+```css
 font-weight: bold;
-{% endhighlight %}
+```
 
 Here's some rules that focus on declaration blocks and lines.
 
@@ -30,7 +30,7 @@ Separate blocks of declarations by an empty line. Except for declarations that a
 
 ##### Bad
 
-```css
+```
 .col-1 {
   width: 50%;
 }
@@ -41,7 +41,7 @@ Separate blocks of declarations by an empty line. Except for declarations that a
 
 ##### Good
 
-{% highlight css %}
+```css
 .col-1 {
   width: 50%;
 }
@@ -49,7 +49,7 @@ Separate blocks of declarations by an empty line. Except for declarations that a
 .col-2 {
   width: 25%;
 }
-{% endhighlight %}
+```
 
 ### One line per property
 
@@ -62,7 +62,7 @@ You can break the [one line](#one-line-per-property) rule when a ruleset contain
 
 ##### Bad
 
-```css
+```
 .call-to-action { width: 100px; height: 100px; }
 
 .email-link {
@@ -72,7 +72,7 @@ You can break the [one line](#one-line-per-property) rule when a ruleset contain
 
 ##### Good
 
-{% highlight css %}
+```css
 .call-to-action {
   width: 100px;
   height: 100px;
@@ -80,4 +80,4 @@ You can break the [one line](#one-line-per-property) rule when a ruleset contain
 
 .email-link   { display: block; }
 .twitter-link { display: inline; }
-{% endhighlight %}
+```

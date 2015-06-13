@@ -20,9 +20,9 @@ color: black;
 
 ##### Good
 
-{% highlight css %}
+```css
 color: #000;
-{% endhighlight %}
+```
 
 ### Border zero
 
@@ -40,9 +40,9 @@ color: rgba(24, 12, 76, 0.4);
 
 ##### Good
 
-{% highlight css %}
+```css
 color: rgba(24, 12, 76, .4);
-{% endhighlight %}
+```
 
 ### Shorthand color values
 
@@ -56,9 +56,9 @@ color: #000000;
 
 ##### Good
 
-{% highlight css %}
+```css
 color: #000;
-{% endhighlight %}
+```
 
 ### Shorthand properties
 
@@ -73,10 +73,10 @@ padding: 20px 10px 20px;
 
 ##### Good
 
-{% highlight css %}
+```css
 margin: 4px;
 padding: 20px 10px;
-{% endhighlight %}
+```
 
 ### Unnecessary Significand
 
@@ -94,9 +94,9 @@ color: rgba(0,0,0,.1);
 
 ##### Good
 
-{% highlight css %}
+```css
 color: rgb(255, 255, 255);
-{% endhighlight %}
+```
 
 ### Zero Units
 
@@ -110,6 +110,6 @@ margin: 0px;
 
 ##### Good
 
-{% highlight css %}
+```css
 margin: 0;
-{% endhighlight %}
+```
