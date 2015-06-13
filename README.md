@@ -7,7 +7,12 @@ This styleguide is how I write code. Styleguides are meant to help teams of deve
 ## Table of contents
 
 * [Editor](./editor/_drafts/README.md)
+  * [Coding style](./editor/_drafts/coding-style.md)
 * [CSS](./css/_drafts/README.md)
+  * [Coding style](./css/_drafts/style.md)
+  * [CSS units](./css/_drafts/units.md)
+  * [Declarations](./css/_drafts/declarations.md)
+  * [Selectors](./css/_drafts/selectors.md)
 
 ## Install
 
