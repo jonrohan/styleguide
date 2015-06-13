@@ -20,11 +20,7 @@ include:
   - .editorconfig
   - .scss-lint.yml
 
-# Dependencies
 markdown: redcarpet
-# kramdown:
-#   input: GFM
-# highlighter: pygments
 
 gems:
   - jemoji
