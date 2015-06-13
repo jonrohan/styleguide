@@ -14,7 +14,7 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
-  - "**/readme.md"
+  - "**/README.md"
 
 include:
   - .editorconfig
