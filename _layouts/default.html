@@ -81,7 +81,7 @@
   <body class="is-nav-open">
 
     <header>
-      <a href="#" class="js-nav-item nav-item">
+      <a href="{{site.baseurl}}/" class="js-nav-item nav-item">
         <div class="inner"></div>
       </a>
       <h1><a href="{{site.baseurl}}/">Styleguide</a></h1>
@@ -96,7 +96,7 @@
     </aside>
 
     <div class="main-content">
-      <span class="page-section">{{ page.section }}</span>
+      <a href="https://github.com/jonrohan/styleguide/blob/gh-pages/{{ page.path }}" class="page-section">{{ page.section }}</a>
       <article class="markdown-body">
         {{ content }}
       </article>
