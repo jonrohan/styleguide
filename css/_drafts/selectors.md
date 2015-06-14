@@ -11,6 +11,12 @@ A **CSS selector** is the pattern you use to identify the element you're matchin
 
 Put double quotes around attribute values in selectors. `button[type="submit"]`
 
+### Selector Depth
+
+In general it's good to keep selector depth at no more than `3`. For each layer of selectors you end up adding complexity and performance issues that could be hard to overcome.
+
+It's best to keep it simple. Try prefixing class names with namespaces like `.forms-header, .forms-input, .forms-textarea`.
+
 ### Hyphenate & lowercase class names
 
 Write all classnames lowercase and use hyphens.
