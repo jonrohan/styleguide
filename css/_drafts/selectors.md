@@ -39,6 +39,30 @@ Write all classnames lowercase and use hyphens.
 }
 ```
 
+### Decouple JavaScript & CSS
+
+It's best if JavaScript doesn't know anything about the styling of the page. Instead it should be concerned with only events. Use `.js-*` classes to query elements and set events, but keep these classes out of your CSS. Similarly, you should also use `.is-*` for JavaScript to set behavior like `.is-open`. Here's a really simple example:
+
+```html
+<div class="js-signup-modal signup-modal">
+  ...
+</div>
+
+<style>
+  .signup-modal {
+    ...
+  }
+
+  .signup-modal.is-open {
+    display: block;
+  }
+</style>
+
+<script>
+  document.querySelector(".js-signup-modal").classList.add("is-open");
+</script>
+```
+
 ### Prefer classnames to attributes and ids
 
 For performance, prefer using just classnames. When you use tag elements, ids, selector attributes it can impact performance on larger pages. For more info, here is [a talk](https://vimeo.com/54990931) on the subject.
