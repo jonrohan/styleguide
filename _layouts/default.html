@@ -109,7 +109,7 @@
           <div class="column one-half text-left">
           {% if previous %}
             {% assign cat = previous.categories | first %}
-            <a href="{{site.baseurl}}{{previous.url}}">&#171; {{ site.data.categories[cat] }} &#8212; {{ previous.title }}</a>
+            <a href="{{site.baseurl}}{{previous.url}}">&#171; {{ site.data.categories[cat] }} {{ previous.title }}</a>
           {% elsif page.url != "/index.html" %}
             <a href="{{site.baseurl}}/">&#171; About</a>
           {% else %}
@@ -120,11 +120,11 @@
           <div class="column one-half text-right">
           {% if next %}
             {% assign cat = next.categories | first %}
-            <a href="{{site.baseurl}}{{next.url}}">{{ site.data.categories[cat] }} &#8212; {{ next.title }} &#187;</a>
+            <a href="{{site.baseurl}}{{next.url}}">{{ site.data.categories[cat] }} {{ next.title }} &#187;</a>
           {% elsif page.url == "/index.html" %}
             {% assign next = site.posts | last %}
             {% assign cat = next.categories | first %}
-            <a href="{{site.baseurl}}{{next.url}}">{{ site.data.categories[cat] }} &#8212; {{ next.title }} &#187;</a>
+            <a href="{{site.baseurl}}{{next.url}}">{{ site.data.categories[cat] }} {{ next.title }} &#187;</a>
           {% else %}
             &nbsp;
           {% endif %}
