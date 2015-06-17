@@ -22,6 +22,26 @@ font-weight: bold;
 Here's some rules that focus on declaration blocks and lines.
 
 * End every declaration with a semicolon.
+* Place closing braces of declaration blocks on a new line.
+* Include one space after `:` for each declaration.
+
+##### Bad
+
+```
+.head {
+  display: block;
+  border:   1px solid #a80 }
+```
+
+##### Good
+
+```css
+.head {
+  display: block;
+  border: 1px solid #a80;
+}
+```
+
 
 ### Place empty line between blocks
 
