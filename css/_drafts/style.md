@@ -7,6 +7,20 @@
 
 Here's some style tips for CSS. Remember these are up to your team, but you should enforce them once they're decided. Think about installing [linters](/styleguide/editor-linting.html) in your workflow.
 
+### Comments
+
+CSS comments are of the form `/* This is commented */`. It's best practice to comment your code with code blocks at the beginning of main sections of code and to inline comments when you are doing something that is unordinary.
+
+```css
+/*
+  Main tab navigation used on marketing pages.
+ */
+.tab-nav {
+  ...
+  margin-left: -1px; /* I had to do this because of the left border */
+}
+```
+
 ### Final newline
 
 Always have a newline at the end of your file. This helps SCMs like git result in less merge conflicts.
@@ -61,4 +75,13 @@ In declarations, opening brackets should be preceded by a single space.
 .container {
   width: 300px;
 }
+```
+
+### Avoid using `@import`
+
+When using `@import`, your site can experience performance problems. It's always better to use `<link>` tags in your header.
+
+
+```html
+<link rel="stylesheet" href="/css/master.css">
 ```
