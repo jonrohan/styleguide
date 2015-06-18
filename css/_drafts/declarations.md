@@ -100,3 +100,22 @@ You can break the [one line](#one-line-per-property) rule when a ruleset contain
 .email-link   { display: block; }
 .twitter-link { display: inline; }
 ```
+
+### Use shorthand declarations
+
+Whenever possible use the shorthand notation for properties rather than the full lines. For more reading I recommend this [Mozilla article](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties).
+
+
+##### Bad
+
+```
+border-width: 1px;
+border-style: solid;
+border-color: #000;
+```
+
+##### Good
+
+```css
+border: 1px solid #000;
+```
