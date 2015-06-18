@@ -10,6 +10,7 @@ I setup [a nice site](http://jonrohan.codes/styleguide/) for the style guide, bu
 
 * [Editor](./editor/_drafts/README.md)
   * [Coding style](./editor/_drafts/style.md)
+  * [Linting](./editor/_drafts/linting.md)
 * [CSS](./css/_drafts/README.md)
   * [Coding style](./css/_drafts/style.md)
   * [CSS units](./css/_drafts/units.md)
