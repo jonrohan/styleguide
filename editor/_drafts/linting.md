@@ -1,6 +1,7 @@
 ---
   title: Linting
   section: 1.2
+  url: http://jonrohan.codes/styleguide/editor-linting.html
   date: 2015-01-02 00:00:00
 ---
 
