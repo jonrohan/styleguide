@@ -3,6 +3,7 @@ title: Jon Rohan's Styleguide
 baseurl: /styleguide
 url: http://jonrohan.codes
 google_analyics_id: UA-543420-18
+release: 0.0.2
 
 # Setup
 permalink: /:categories-:title.html
