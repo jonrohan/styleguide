@@ -19,6 +19,7 @@ exclude:
 include:
   - .editorconfig
   - .scss-lint.yml
+  - .csscomb.json
 
 markdown: redcarpet
 
