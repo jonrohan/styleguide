@@ -66,6 +66,7 @@
     <link rel="stylesheet" href="{{site.baseurl}}/styleguide.css">
 
     <script src="{{ site.url }}/assets/js/lib.js"></script>
+    <script src="/styleguide/scripts.js"></script>
     <script>
       if(document.cookie.match(/skipanaly=1/)==null) {
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -109,9 +110,9 @@
           <div class="column one-half text-left">
           {% if previous %}
             {% assign cat = previous.categories | first %}
-            <a href="{{site.baseurl}}{{previous.url}}">&#171; {{ site.data.categories[cat] }} {{ previous.title }}</a>
+            <a href="{{site.baseurl}}{{previous.url}}" class="js-last-page">&#171; {{ site.data.categories[cat] }} {{ previous.title }}</a>
           {% elsif page.url != "/index.html" %}
-            <a href="{{site.baseurl}}/">&#171; About</a>
+            <a href="{{site.baseurl}}/" class="js-last-page">&#171; About</a>
           {% else %}
             &nbsp;
           {% endif %}
@@ -120,11 +121,11 @@
           <div class="column one-half text-right">
           {% if next %}
             {% assign cat = next.categories | first %}
-            <a href="{{site.baseurl}}{{next.url}}">{{ site.data.categories[cat] }} {{ next.title }} &#187;</a>
+            <a href="{{site.baseurl}}{{next.url}}" class="js-next-page">{{ site.data.categories[cat] }} {{ next.title }} &#187;</a>
           {% elsif page.url == "/index.html" %}
             {% assign next = site.posts | last %}
             {% assign cat = next.categories | first %}
-            <a href="{{site.baseurl}}{{next.url}}">{{ site.data.categories[cat] }} {{ next.title }} &#187;</a>
+            <a href="{{site.baseurl}}{{next.url}}" class="js-next-page">{{ site.data.categories[cat] }} {{ next.title }} &#187;</a>
           {% else %}
             &nbsp;
           {% endif %}
@@ -136,20 +137,5 @@
         </div>
       </footer>
     </div>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        if (anchors) {
-          anchors.options = {
-            placement: 'right',
-            icon: '#'
-          };
-          anchors.add('.markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6');
-        }
-        $(document).on("click", ".js-nav-item", function(e) {
-          e.preventDefault();
-          $("body").toggleClass("is-nav-close is-nav-open");
-        });
-      })
-    </script>
   </body>
 </html>
