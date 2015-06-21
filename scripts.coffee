@@ -3,18 +3,23 @@
 
 $ ->
   currentMenuItem = null
+  anchor_selector = ".markdown-body h3,
+    .markdown-body h4,
+    .markdown-body h5,
+    .markdown-body h6"
+  contentHeaders = $(anchor_selector)
   if anchors
     anchors.options =
-      placement: 'right',
-      icon: '#'
-    anchors.add('.markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6')
+      placement: "right",
+      icon: "#"
+    anchors.add(anchor_selector)
 
   $(document).on "click", ".js-nav-item", (e) ->
     e.preventDefault()
     $("body").toggleClass("is-nav-close is-nav-open")
 
   $(document).on "keypress", (e) ->
-    contentHeaders = $('.markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6');
+
     pushHash = (item) ->
       if item
         window.location = item.url
@@ -30,9 +35,16 @@ $ ->
           return getNextMenuItem()
 
         else
+          if contentHeaders.length == 0
+            currentMenuItem =
+              index: 0
+            return getNextMenuItem()
+
           currentMenuItem =
             index: 0,
             url: "#" + $(contentHeaders[0]).attr("id")
+
+
 
       else if currentMenuItem.index + 1 >= contentHeaders.length
         next = $(".js-next-page")
@@ -64,8 +76,8 @@ $ ->
 
         else
           currentMenuItem =
-            index: contentHeaders.length - 1,
-            url: "#" + $(contentHeaders.last()).attr("id")
+            index: 0
+          return getPrevMenuItem()
       else if currentMenuItem.index <= 0
         prev = $(".js-last-page")
 
