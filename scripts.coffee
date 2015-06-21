@@ -4,9 +4,7 @@
 $ ->
   currentMenuItem = null
   anchor_selector = ".markdown-body h3,
-    .markdown-body h4,
-    .markdown-body h5,
-    .markdown-body h6"
+    .markdown-body h4"
   contentHeaders = $(anchor_selector)
   if anchors
     anchors.options =
