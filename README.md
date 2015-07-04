@@ -16,6 +16,9 @@ I setup [a nice site](http://jonrohan.codes/styleguide/) for the style guide, bu
   * [CSS units](./css/_drafts/units.md)
   * [Declarations](./css/_drafts/declarations.md)
   * [Selectors](./css/_drafts/selectors.md)
+* [HTML](./html/_drafts/README.md)
+  * [Coding style](./html/_drafts/style.md)
+  * [Meta](./html/_drafts/meta.md)
 
 ## Install
 
