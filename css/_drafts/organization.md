@@ -24,7 +24,7 @@ Sorting declarations can help you find duplicate lines, and more bugs because so
 3. **Typographic**
 4. **Visual**
 
-The last two sections come last because they don't effect positioning and box model. I like to use [csscomb.js](https://github.com/csscomb/csscomb.js) to sort my declarations for me. I've uploaded [a config file](http://jonrohan.codes/styleguide/.csscomb.json) for it.
+The last two sections come last because they don't affect positioning and box model. I like to use [csscomb.js](https://github.com/csscomb/csscomb.js) to sort my declarations for me. I've uploaded [a config file](http://jonrohan.codes/styleguide/.csscomb.json) for it.
 
 ### Media queries
 
